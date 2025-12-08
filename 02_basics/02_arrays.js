@@ -17,3 +17,10 @@ const realArr = anotherArr.flat(Infinity)
 //console.log(realArr); // [1,2,3,4,5,6,7,8,9,10]
 
 console.log(Array.isArray("Ram")); // false
+console.log(Array.from("Ram")); // ['R','a','m']
+
+let s1 = 100
+let s2 = 200
+let s3 =300
+console.log(Array.of(s1,s2,s3)); // [100,200,300]
+
