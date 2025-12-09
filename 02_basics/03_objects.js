@@ -25,4 +25,18 @@ console.log(JsUser["mail"]); //use this always
 console.log(JsUser["fullname"])
 console.log(JsUser[mySym])
 
-Object.freeze(JsUser)  // after this no changes will be applied
+//Object.freeze(JsUser)  // after this no changes will be applied
+
+JsUser.greeting = function(){
+    console.log("Hello JS user");
+}
+
+console.log(JsUser.greeting); //undefined
+console.log(JsUser.greeting()); //correct
+
+JsUser.greetingtwo = function(){
+    console.log(`Hello JS user, ${this.name}`);
+}
+
+
+console.log(JsUser.greetingtwo()); 
