@@ -14,3 +14,14 @@ arr = arr.map(ele=>ele*ele);
 console.log(arr);
 
 //Filter
+
+let arr = [1,9,2,4,6]
+console.log(arr);
+arr = arr.filter((ele)=>{
+    if(ele%2==0) return true;
+    else return false;
+
+});
+console.log(arr);
+
+//Reduce
